@@ -95,6 +95,7 @@
 		<script>		
 			$(document).ready(function(){
 				$('button').on('click', function(e){
+					e.preventDefault();
 					let form = document.getElementById('contactForm');
 					
 					if(form.checkValidity()){
