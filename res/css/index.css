@@ -9,3 +9,19 @@
 .navbar-logo {
 	height: 32px;
 }
+
+.pop:hover {
+	transform: scale(1.02); 
+}
+
+.pop {
+	transition: all 0.5s ease-out;
+}
+
+.press:hover {
+	background: whitesmoke;
+}
+
+.press {
+	transition: all 0.3s ease-out;
+}

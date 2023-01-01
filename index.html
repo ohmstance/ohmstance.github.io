@@ -29,19 +29,19 @@
 				<div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+							<a class="nav-link active rounded press" aria-current="page" href="index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+							<a class="nav-link active rounded press" aria-current="page" href="about.html">About Us</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="products.html">Products</a>
+							<a class="nav-link active rounded press" aria-current="page" href="products.html">Products</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="service.html">Services</a>
+							<a class="nav-link active rounded press" aria-current="page" href="service.html">Services</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+							<a class="nav-link active rounded press" aria-current="page" href="contact.html">Contact Us</a>
 						</li>
 					</ul>
 				</div>
@@ -58,13 +58,17 @@
 						<a class="btn btn-primary" href="#technology" role="button">Read more</a>
 					</div>
 					<div class="col-12 col-md-6 p-3 my-md-auto">
-						<div class="ratio ratio-16x9">
-							<iframe src="https://www.youtube.com/embed/zwWRTUT0IMI" title="YouTube video" allowfullscreen></iframe>
-						</div>
+						<video class="ratio ratio-16x9 rounded shadow pop" controls autoplay loop muted>
+							<source src="res/vid/monad promo.webm" type="video/webm"/>
+							<source src="res/vid/monad promo.mp4" type="video/mp4"/>
+								<p>
+									Your browser does not support HTML video. Here is a <a href="res/vid/monad promo.mp4">link to the video</a> instead.
+								</p>
+						</video>
 					</div>
 				</div>
 				
-				<div id="technology" class="row p-3">
+				<div class="row p-3" id="technology">
 					<p class="h1 fw-bold text-center">Products</p>
 					<div class="row align-items-center">
 						<div class="col-auto py-3">
@@ -100,21 +104,20 @@
 				
 				<div class="row p-3">
 					<p class="h1 fw-bold text-center">Services</p>
-					<div class="row g-3">
-						<div class="p-4 border rounded">
+					<div class="row m-0 g-3">
+						<div class="p-4 border rounded pop">
 							<p class="h3">Product development</p>
 							<p>We provide consultations regarding technology and product development relevant for any industry. Our Looking Glass technology retrieve solutions to your problems that you have solved in the future.</p>
 						</div>
-						<div class="p-4 border rounded">
+						<div class="p-4 border rounded pop">
 							<p class="h3">System integration</p>
 							<p>We provide integration services of our technology to products in exchange for licensing fees amounting to 50% of the product's retail price.</p>
 						</div>
-						<div class="p-4 border rounded">
+						<div class="p-4 border rounded pop">
 							<p class="h3">Prediction</p>
 							<p>We provide prediction on the success of your product before development even begins. Our Looking Glass technology is able to predict any events with 100% precision.</p>
 							<p style="font-size: 8px">* WARNING: Acting on predictions will cause temporal anomalies, which includes, but not limited to, temporal sickness, rifts in space-time, and the cessation of the world as we know it.</p>
 						</div>
-					</div>
 				</div>
 				
 			</div>
