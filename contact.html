@@ -130,11 +130,11 @@
 
 		
 			$(document).ready(function(){
-				$('button').on('click', function(e){
-					e.preventDefault();
+				$('button').on('click', function(event){
 					let form = document.getElementById('contactForm');
 					
 					if(form.checkValidity()){
+						event.preventDefault();
 						$('.btn').prop("disabled", true);
 						setTimeout(function(){
 							$('.alert').show()
