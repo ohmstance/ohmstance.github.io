@@ -13,10 +13,25 @@
 		
 		<!-- Self made CSS -->
 		<link rel="stylesheet" href="res/css/index.css">
+		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+		<style>
+			.parallax {
+			  /* The image used */
+			  background-image: url("res/img/bg2.jpg");
+			
+			  /* Set a specific height */
+			  min-height: 500px; 
+			
+			  /* Create the parallax scrolling effect */
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+			}
+			</style>
 	</head>
   
-	<body>
-	
+	<body class="parallax">
 		<nav class="navbar navbar-expand-md bg-body-tertiary">
 			<div class="container-xxl py-0 px-3">
 				<div style="cursor: pointer;" onclick="document.location='index.html'">
@@ -50,7 +65,6 @@
 		
 		<div class="container-xxl p-0">
 			<div class="container-fluid">
-			
 				<div class="row p-3 align-items-center">
 					<div class="col-12 col-md-6 p-3">
 						<p class="h1 fw-bold">We develop leading-edge technology and solutions</p>
@@ -59,8 +73,8 @@
 					</div>
 					<div class="col-12 col-md-6 p-3 my-md-auto">
 						<video class="ratio ratio-16x9 rounded shadow pop" controls autoplay loop muted>
-							<source src="res/vid/monad promo.webm" type="video/webm"/>
-							<source src="res/vid/monad promo.mp4" type="video/mp4"/>
+							<source src="res/video/Video.webm" type="video/webm"/>
+							<source src="res/video/Video.mp4" type="video/mp4"/>
 								<p>
 									Your browser does not support HTML video. Here is a <a href="res/vid/monad promo.mp4">link to the video</a> instead.
 								</p>
@@ -68,9 +82,10 @@
 					</div>
 				</div>
 				
-				<div class="row p-3" id="technology">
+				<div id="technology" class="row p-3 topBar" data-aos="fade-in">
+					
 					<p class="h1 fw-bold text-center">Products</p>
-					<div class="row align-items-center">
+					<div class="row align-items-center topBar" data-aos="fade-in">
 						<div class="col-auto py-3">
 							<img src="res/img/compress.png" width="150">
 						</div>
@@ -79,16 +94,16 @@
 							<p>By applying middle-out compression, very high compression ratio can be achieved, eclipsing the performance of conventional algorithms by a factor of 10.</p>
 						</div>
 					</div>
-					<div class="row align-items-center">
+					<div class="row align-items-center topBar" data-aos="fade-in">
 						<div class="col-auto py-3">
 							<img src="res/img/quark.png" width="150">
 						</div>
 						<div class="col-md">
-							<p class="h3">Quantum Communication</p>
+							<p class="h3">Quantum Communications</p>
 							<p>A faster-than-light communication achieved through absolute control of subatomic particles and quantum entanglement, which conincidentally breaks the Shannon limit theorem.</p>
 						</div>
 					</div>
-					<div class="row align-items-center">
+					<div class="row align-items-center topBar" data-aos="fade-in">
 						<div class="col-auto py-3">
 							<img src="res/img/warp.png" width="150">
 						</div>
@@ -102,20 +117,20 @@
 					</div>
 				</div>
 				
-				<div class="row p-3">
+				<div class="row p-3 topBar pop" data-aos="fade-in">
 					<p class="h1 fw-bold text-center">Services</p>
-					<div class="row m-0 g-3">
-						<div class="p-4 border rounded pop">
+					<div class="row g-3">
+						<div class="p-4 border rounded border border-dark topBar" data-aos="fade-in">
 							<p class="h3">Product development</p>
 							<p>We provide consultations regarding technology and product development relevant for any industry. Our Looking Glass technology retrieve solutions to your problems that you have solved in the future.</p>
 						</div>
-						<div class="p-4 border rounded pop">
+						<div class="p-4 border rounded border border-dark topBar" data-aos="fade-in">
 							<p class="h3">System integration</p>
 							<p>We provide integration services of our technology to products in exchange for licensing fees amounting to 50% of the product's retail price.</p>
 						</div>
-						<div class="p-4 border rounded pop">
+						<div class="p-4 border rounded border border-dark topBar" data-aos="fade-in">
 							<p class="h3">Prediction</p>
-							<p>We provide prediction on the success of your product before development even begins. Our Looking Glass technology is able to predict any events with 100% precision.</p>
+							<p >We provide prediction on the success of your product before development even begins. Our Looking Glass technology is able to predict any events with 100% precision.</p>
 							<p style="font-size: 8px">* WARNING: Acting on predictions will cause temporal anomalies, which includes, but not limited to, temporal sickness, rifts in space-time, and the cessation of the world as we know it.</p>
 						</div>
 					</div>
@@ -159,5 +174,9 @@
 
 		<!-- Bootstrap JS -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	  <script>
+		AOS.init();
+	  </script>
 	</body>
 </html>

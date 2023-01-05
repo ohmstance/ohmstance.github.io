@@ -13,6 +13,76 @@
 		
 		<!-- Self made CSS -->
 		<link rel="stylesheet" href="res/css/index.css">
+		<style>
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			  margin: 0;
+			}
+			
+			html {
+			  box-sizing: border-box;
+			}
+			
+			*, *:before, *:after {
+			  box-sizing: inherit;
+			}
+			
+			.column {
+			  float: left;
+			  width: 33.3%;
+			  margin-bottom: 16px;
+			  padding: 0 8px;
+			}
+			
+			.card {
+			  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			  margin: 8px;
+			}
+			
+			.about-section {
+			  padding: 50px;
+			  text-align: center;
+			  background-color: #474e5d;
+			  color: white;
+			}
+			
+			.container {
+			  padding: 0 16px;
+			}
+			
+			.container::after, .row::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
+			
+			.title {
+			  color: grey;
+			}
+			
+			.button {
+			  border: none;
+			  outline: 0;
+			  display: inline-block;
+			  padding: 8px;
+			  color: white;
+			  background-color: #000;
+			  text-align: center;
+			  cursor: pointer;
+			  width: 100%;
+			}
+			
+			.button:hover {
+			  background-color: #555;
+			}
+			
+			@media screen and (max-width: 650px) {
+			  .column {
+				width: 100%;
+				display: block;
+			  }
+			}
+			</style>
 	</head>
   
 	<body>
@@ -47,39 +117,43 @@
 				</div>
 			</div>
 		</nav>
-		
-		<div class="container-xxl p-0">
-			<div class="container-fluid">
-			
-				<div class="page-banner">
-					<p class="h1 fw-bold position-absolute start-50 translate-middle-x">About Us</p>
+		<div class="about-section">
+			<h1>About Us</h1>
+			<p>Monad Solutions is a technology-based company that prides itself on countless breakthrough innovations it has produced since its foundation in 2020. Founded during a global pandemic that it may or may not had a hand in, the forward-looking attitude of our founder, Dato' Adam, propelled to company to the global arena.<br><br>The company has participated in numerous clandestine operations across the globe to achieve its goal in becoming a powerful supranational organization. It has multilateral relations with the majority of governments around the world. The company believes in the financial goals of its shareholders.</p>
+		  </div>
+		  
+		  <h2 style="text-align:center">Our Principles</h2>
+			<div class="row">
+			<div class="column">
+			<div class="card pop">
+				<img src="res/img/mission2.png" alt="Mission" style="width:90%">
+				<div class="container">
+				<h2>Mission</h2>
+				<p style="font-style: italic;">To become a powerful supranational organization</p>
 				</div>
-				
-				<div class="row p-3">
-					<div class="col-md-8">
-						<p class="h3">Monad Solutions</p>
-						<p>
-						Monad Solutions is a technology-based company that prides itself on countless breakthrough innovations it has produced since its foundation in 2020. Founded during a global pandemic that it may or may not had a hand in, the forward-looking attitude of our founder, Dato' Raj, propelled to company to the global arena.<br><br>The company has participated in numerous clandestine operations across the globe to achieve its goal in becoming a powerful supranational organization. It has multilateral relations with the majority of governments around the world. The company believes in the financial goals of its shareholders.
-						</p>
-					</div>
-					<div class="col">
-						<div class="row">
-							<p class="h3">Mission</p>
-							<div>
-								<p class="p-3 border rounded pop">"To become a powerful supranational organization."</p>
-							</div>
-						</div>
-						<div class="row">
-							<p class="h3">Vision</p>
-							<div>
-								<p class="p-3 border rounded pop">"To meet the numerous expectations of our shareholders."</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
 			</div>
-		</div>
+			</div>
+
+			<div class="column">
+			<div class="card pop">
+				<img src= "res/img/vision2.png" alt="Vision" style="width:90%">
+				<div class="container">
+				<h2>Vision</h2>
+				<p style="font-style: italic;">To meet the numerous expectations of our stakeholders</p>
+				</div>
+			</div>
+			</div>
+
+			<div class="column pop">
+			<div class="card">
+				<img src="res/img/values.png" alt="Values" style="width:90%">
+				<div class="container">
+				<h2>Values</h2>
+				<p style="font-style: italic;">Innovation, accountability, honesty and quality</p>
+				</div>
+			</div>
+			</div>
+			</div>
 		
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>

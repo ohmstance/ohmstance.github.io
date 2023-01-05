@@ -9,6 +9,10 @@
 .navbar-logo {
 	height: 32px;
 }
+.fadE {
+    background-color: white;
+    opacity: 1;
+  }
 
 .pop:hover {
 	transform: scale(1.02); 

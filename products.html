@@ -13,6 +13,21 @@
 		
 		<!-- Self made CSS -->
 		<link rel="stylesheet" href="res/css/index.css">
+		<style>
+			.parallax {
+			  /* The image used */
+			  background-image: url("res/img/bg.jpg");
+			
+			  /* Set a specific height */
+			  min-height: 500px; 
+			
+			  /* Create the parallax scrolling effect */
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+			}
+			</style>
 	</head>
   
 	<body>
@@ -48,7 +63,7 @@
 			</div>
 		</nav>
 		
-		<div class="container-xxl p-0">
+		<div class="container-xxl p-0 parallax">
 			<div class="container-fluid">
 			
 				<div class="page-banner">
@@ -58,25 +73,25 @@
 				<div class="row p-3">
 					<div class="row align-items-center">
 						<div class="col-auto py-3">
-							<img src="res/img/compress.png" width="150">
+							<img src="res/img/compress.png" width="250">
 						</div>
 						<div class="col-md">
 							<p class="h3">Middle-Out Compression</p>
-							<p>By applying middle-out compression, very high compression ratio can be achieved, eclipsing the performance of conventional algorithms by a factor of 10.</p>
+							<p>Middle-out compression is no longer a fictional invention. The algorithm computes the XOR of a new value and the previous one. By applying middle-out compression, very high compression ratio can be achieved, eclipsing the performance of conventional algorithms by a factor of 10.  </p>
 						</div>
 					</div>
 					<div class="row align-items-center">
 						<div class="col-auto py-3">
-							<img src="res/img/quark.png" width="150">
+							<img src="res/img/quark.png" width="250">
 						</div>
 						<div class="col-md">
 							<p class="h3">Quantum Communication</p>
-							<p>A faster-than-light communication achieved through absolute control of subatomic particles and quantum entanglement, which conincidentally breaks the Shannon limit theorem.</p>
+							<p>Your new way of protecting data. A faster-than-light communication achieved through absolute control of subatomic particles and quantum entanglement, which conincidentally breaks the Shannon limit theorem.</p>
 						</div>
 					</div>
 					<div class="row align-items-center">
 						<div class="col-auto py-3">
-							<img src="res/img/warp.png" width="150">
+							<img src="res/img/warp.png" width="250">
 						</div>
 						<div class="col-md">
 							<p class="h3">Alcubierre Drive</p>
@@ -85,11 +100,11 @@
 					</div>
 					<div class="row align-items-center">
 						<div class="col-auto py-3">
-							<img src="res/img/tachyon.png" width="150">
+							<img src="res/img/tachyon.png" width="250">
 						</div>
 						<div class="col-md">
 							<p class="h3">Looking Glass</p>
-							<p>A tachyon-imaging device that peers into the future.</p>
+							<p>A tachyon-imaging device that peers into the future. Capture your experiences and explore them interactively. A 3D visual experience which allows users to engage with their past emotionally in an entertaining manner </p>
 						</div>
 					</div>
 				</div>
@@ -132,6 +147,5 @@
 
 		<!-- Bootstrap JS -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-		
 	</body>
 </html>

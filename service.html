@@ -13,6 +13,21 @@
 		
 		<!-- Self made CSS -->
 		<link rel="stylesheet" href="res/css/index.css">
+		<style>
+			.parallax {
+			  /* The image used */
+			  background-image: url("res/img/bg3.jpg");
+			
+			  /* Set a specific height */
+			  min-height: 500px; 
+			
+			  /* Create the parallax scrolling effect */
+			  background-attachment: fixed;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+			}
+			</style>
 	</head>
   
 	<body>
@@ -48,7 +63,7 @@
 			</div>
 		</nav>
 		
-		<div class="container-xxl p-0">
+		<div class="container-xxl p-0 parallax">
 			<div class="container-fluid">
 			
 				<div class="page-banner">
@@ -56,16 +71,21 @@
 				</div>
 				
 				<div class="row p-3">
-					<div class="row m-0 g-3">
-						<div class="p-4 border rounded pop">
-							<p class="h3">Product development</p>
-							<p>We provide consultations regarding technology and product development relevant for any industry. Our Looking Glass technology retrieve solutions to your problems that you have solved in the future.</p>
+					<div class="row g-3">
+						<div class="p-4 border rounded fadE">
+							<div class="col-auto py-3">
+								<img src="res/img/product.png" width="250" style="float: right;">
+								<p class="h3">Product development</p>
+								<p>We provide consultations regarding technology and product development relevant for any industry. Our Looking Glass technology retrieve solutions to your problems that you have solved in the future.</p>
+							</div>
 						</div>
-						<div class="p-4 border rounded pop">
-							<p class="h3">System integration</p>
-							<p>We provide integration services of our technology to products in exchange for licensing fees amounting to 50% of the product's retail price.</p>
+						<div class="p-4 border rounded fadE">
+							<img src="res/img/system-integration.png" width="250" style="float: left; height: min-content;">
+							<p class="h3" style="float:right">System integration</p><br>
+							<p style="float:right">We provide integration services of our technology to products in exchange for licensing fees amounting to 50% of the product's retail price.<br> Our experts will consult you on how to do that in the most efficient way</p>
 						</div>
-						<div class="p-4 border rounded pop">
+						<div class="p-4 border rounded fadE">
+							<img src="res/img/analysis.png" width="250" style="float: right;">
 							<p class="h3">Prediction</p>
 							<p>We provide prediction on the success of your product before development even begins. Our Looking Glass technology is able to predict any events with 100% precision.</p>
 							<p style="font-size: 8px">* WARNING: Acting on predictions will cause temporal anomalies, which includes, but not limited to, temporal sickness, rifts in space-time, and the cessation of the world as we know it.</p>
